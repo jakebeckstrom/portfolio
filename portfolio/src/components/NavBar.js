@@ -6,9 +6,7 @@ export default function NavBar() {
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <Contact />
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Jacob Beckstrom
-        </a>
+        <a class="navbar-brand">Jacob Beckstrom</a>
         <button
           class="navbar-toggler"
           type="button"
