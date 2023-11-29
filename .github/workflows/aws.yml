@@ -30,5 +30,6 @@ jobs:
         sudo apt update
         sudo apt install awscli
         cd portfolio
+        npm install
         npm run build
         aws s3 sync build s3://beckstrom-portfolio-site
