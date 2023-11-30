@@ -19,7 +19,7 @@ export default function Home({ resume }) {
                 <Experience experience={item} />
               ))}
             </div>
-            <div class="col-lg-auto">
+            <div class="col-lg-4">
               <h2>Education</h2>
               <Education education={resume.education} />
               <h2>Skills</h2>
@@ -27,12 +27,12 @@ export default function Home({ resume }) {
                 <Skill skills={item} />
               ))}
             </div>
-            <div class="col-lg-auto">
-              <h2>Certifications</h2>
-              {resume.certifications.map((item) => (
-                <Certification certification={item} />
-              ))}
-            </div>
+          </div>
+          <div class="row">
+            <h2>Certifications</h2>
+            {resume.certifications.map((item) => (
+              <Certification certification={item} />
+            ))}
           </div>
         </div>
       )}

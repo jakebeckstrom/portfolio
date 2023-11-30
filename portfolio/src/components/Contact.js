@@ -13,7 +13,7 @@ export default function Contact() {
         <div class="modal-content">
           <div class="modal-header">
             <h1 class="modal-title fs-5" id="exampleModalLabel">
-              Modal title
+              Connect with me!
             </h1>
             <button
               type="button"
@@ -23,8 +23,21 @@ export default function Contact() {
             ></button>
           </div>
           <div class="modal-body">
-            <div class="row">Email</div>
-            <div class="row">Linkedin</div>
+            <div class="row">
+              <p>Send me and email or connect with me on LinkedIn!</p>
+            </div>
+            <div class="row">
+              <div class="col-4">
+                <p>Email</p>
+                <p>LinkedIn</p>
+              </div>
+              <div class="col-8">
+                <p>jakebeckstrom@gmail.com</p>
+                <a href="https://www.linkedin.com/in/jacobbeckstrom/">
+                  www.linkedin.com/in/jacobbeckstrom/
+                </a>
+              </div>
+            </div>
           </div>
           <div class="modal-footer">
             <button
