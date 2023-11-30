@@ -4,6 +4,7 @@ import _ from "lodash";
 import Skill from "./Skill";
 import Education from "./Education";
 import Certification from "./Certification";
+import Timeline from "./Timeline";
 
 export default function Home({ resume }) {
   return (
@@ -12,6 +13,11 @@ export default function Home({ resume }) {
         <div></div>
       ) : (
         <div class="container">
+          <div class="row">
+            <div class="col-12">
+            <Timeline />
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-8">
               <h2>Experience</h2>
