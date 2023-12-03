@@ -24,7 +24,7 @@ function App() {
   let view = "home";
 
   return (
-    <main>
+    <main class="gradient-custom">
       <NavBar />
       {view === "home" && <Home resume={resumeData} />}
       {view === "projects" && <Projects />}

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Skill({ skills }) {
   return (
-    <div class="card">
+    <div class="card col-md-6">
       <div class="card-body">
         <h5 class="card-title">{skills.name}</h5>
         <p class="card-text">
