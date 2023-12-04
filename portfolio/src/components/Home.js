@@ -17,11 +17,6 @@ export default function Home({ resume }) {
             <Bio />
           </div>
           <div class="row">
-            <div class="col-12">
-            <Timeline />
-            </div>
-          </div>
-          <div class="row">
             <div class="col-lg-8">
               <h2>Experience</h2>
               {resume.experience.map((item) => (
