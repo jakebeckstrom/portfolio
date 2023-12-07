@@ -11,7 +11,6 @@ export default function NavBar({ updateView }) {
   };
 
   const handleNavBarClick = (event) => {
-    console.log(event.target.id);
     updateView(event.target.id);
   };
 

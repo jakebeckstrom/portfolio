@@ -19,23 +19,18 @@ export default function Projects({ projects }) {
   }, [projects.project_list]);
 
   React.useEffect(() => {
-    console.log(techFilters);
     if (techFilters.length > 0) {
       let newProjectList = projects.project_list.filter((project) => {
         let found = false;
         project.technologies.forEach((item) => {
-          console.log(item, techFilters);
-          console.log(techFilters.includes(item));
           if (techFilters.includes(item)) {
             found = true;
           }
         });
         return found;
       });
-      console.log("new projects", newProjectList);
       updateFilteredProjects(newProjectList);
     } else {
-      console.log(techFilters.length);
       updateFilteredProjects(projects.project_list);
     }
   }, [techFilters, projects]);
