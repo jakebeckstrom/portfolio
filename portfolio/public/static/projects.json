@@ -15,23 +15,6 @@
                 "Route53",
                 "Cloudfront"
             ]
-        },
-        {
-            "name": "Scheduler",
-            "link": "",
-            "github": "https://github.com/jakebeckstrom/Scheduler",
-            "design": "This website was created using Angular, Typescript and AWS SAM",
-            "deployment": "The Frontend of this website was created using S3 static website hosting and the backend was built using the AWS Serverless Application model.",
-            "technologies": [
-                "Angular",
-                "Typescript",
-                "AWS",
-                "Serverless Application Model",
-                "Python",
-                "Lambda",
-                "S3",
-                "API Gateway"
-            ]
         }
     ]
 }
