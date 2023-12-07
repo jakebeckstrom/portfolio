@@ -9,8 +9,8 @@ function App() {
   const [projectData, updateProjectData] = React.useState({});
   const [view, updateView] = React.useState("home");
 
-  // const currentURL = window.location.href;
-  const currentURL = "https://jacob-beckstrom.com/";
+  const currentURL = window.location.href;
+  
   React.useEffect(() => {
     fetch("/static/resume_data.json", {
       headers: {
