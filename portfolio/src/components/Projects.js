@@ -50,6 +50,14 @@ export default function Projects({ projects }) {
           reasoning for each project and the next steps if I had more time to
           work on it.
         </p>
+        <div class="alert alert-warning" role="alert">
+          Please Note! This portfolio website is a recent initiative that I have
+          taken on, so this is a work in progress. I am currently working on
+          providing write ups for each project and making sure that they are
+          fully functional. All of the links should work, but have various bugs,
+          please be patient as I work through these bugs. Projects in incomplete
+          states will have a warning badge.
+        </div>
       </div>
       <div class="row">
         <SkillFilter

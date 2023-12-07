@@ -6,11 +6,14 @@ export default function ProjectItem({ project }) {
       {/* <div class="card-header">{project.name}</div> */}
       <div class="card-body">
         <h5 class="card-title">{project.name}</h5>
+        {project.incomplete && (
+          <span class="badge text-bg-warning">Incomplete</span>
+        )}
         <p class="card-text">{project.design}</p>
         <p class="card-text">{project.deployment}</p>
         <div class="row">
           {project.technologies.map((tech) => (
-            <p class="d-inline w-auto border rounded border-primary p-2 m-2">
+            <p class="d-inline w-auto border rounded border-secondary m-1">
               {tech}
             </p>
           ))}
@@ -23,14 +26,16 @@ export default function ProjectItem({ project }) {
         >
           Project
         </a>
-        <a
-          href={project.github}
-          class="btn btn-secondary p-2"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Github
-        </a>
+        {project.github.map((item) => (
+          <a
+            href={item.link}
+            class="btn btn-secondary p-2"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {item.name}
+          </a>
+        ))}
       </div>
     </div>
   );

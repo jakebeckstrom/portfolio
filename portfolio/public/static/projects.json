@@ -1,20 +1,121 @@
 {
-    "project_list": [
+  "project_list": [
+    {
+      "name": "Portfolio Website",
+      "incomplete": false,
+      "link": "https://jacob-beckstrom.com",
+      "github": [
         {
-            "name": "Portfolio Website",
-            "link": "https://jacob-beckstrom.com",
-            "github": "https://github.com/jakebeckstrom/portfolio",
-            "design": "This website was created using React and bootstrap.",
-            "deployment": "This website is deployed using S3 with the Static Webiste hosting configuration. Https is provided by Cloudfront and AWS ACM, DNS is provided by Route53",
-            "technologies": [
-                "Javascript",
-                "React",
-                "Bootstrap",
-                "AWS",
-                "S3",
-                "Route53",
-                "Cloudfront"
-            ]
+          "name": "github",
+          "link": "https://github.com/jakebeckstrom/portfolio"
         }
-    ]
+      ],
+      "design": "This website was created using React and bootstrap.",
+      "deployment": "This website is deployed using S3 with the Static Webiste hosting configuration. Https is provided by Cloudfront and AWS ACM, DNS is provided by Route53",
+      "technologies": [
+        "Javascript",
+        "React",
+        "Bootstrap",
+        "AWS",
+        "S3",
+        "Route53",
+        "Cloudfront"
+      ]
+    },
+    {
+      "name": "Scheduler",
+      "incomplete": true,
+      "link": "http://scheduler-host.s3-website.us-east-2.amazonaws.com/",
+      "github": [
+        {
+          "name": "Frontend",
+          "link": "https://github.com/jakebeckstrom/Scheduler"
+        },
+        {
+          "name": "Backend",
+          "link": "https://github.com/jakebeckstrom/Scheduler-backend"
+        }
+      ],
+      "design": "",
+      "deployment": "",
+      "technologies": [
+        "Angular",
+        "typescript",
+        "Python",
+        "Serverless Application Model",
+        "Lambda",
+        "S3",
+        "Material UI",
+        "Redux",
+        "API Gateway",
+        "Rest API"
+      ]
+    },
+    {
+      "name": "Guess Who Game",
+      "incomplete": true,
+      "link": "https://guesswho-itme.netlify.app/",
+      "github": [
+        {
+          "name": "Frontend",
+          "link": "https://github.com/jakebeckstrom/frontend"
+        },
+        {
+          "name": "Backend",
+          "link": "https://github.com/jakebeckstrom/GuessWhoGame"
+        }
+      ],
+      "design": "",
+      "deployment": "",
+      "technologies": [
+        "React",
+        "Material UI",
+        "Redux",
+        "S3",
+        "Node.js",
+        "Express",
+        "Websockets",
+        "Rest API",
+        "Netlify",
+        "Heroku"
+      ]
+    },
+    {
+      "name": "5-Straight",
+      "link": "TBD",
+      "incomplete": true,
+      "github": [
+        {
+          "name": "Github",
+          "link": "https://github.com/jakebeckstrom/5straight"
+        }
+      ],
+      "design": "",
+      "deployment": "",
+      "technologies": ["Java"]
+    },
+    {
+      "name": "Calculator",
+      "link": "https://my-calculator-app123.netlify.app/",
+      "incomplete": true,
+      "github": [
+        {
+          "name": "Frontend and backend",
+          "link": "https://github.com/jakebeckstrom/Calculator"
+        }
+      ],
+      "design": "",
+      "deployment": "",
+      "technologies": [
+        "Javascript",
+        "Node.js",
+        "Express",
+        "Netlify",
+        "Heroku",
+        "React",
+        "Material UI",
+        "Websockets"
+      ]
+    }
+  ]
 }
