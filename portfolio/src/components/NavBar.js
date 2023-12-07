@@ -1,7 +1,7 @@
 import React from "react";
 import Contact from "./Contact";
 
-export default function NavBar() {
+export default function NavBar({ updateView }) {
   const toggleDarkMode = () => {
     if (document.documentElement.getAttribute("data-bs-theme") === "dark") {
       document.documentElement.setAttribute("data-bs-theme", "light");
@@ -10,11 +10,17 @@ export default function NavBar() {
     }
   };
 
+  const handleNavBarClick = (event) => {
+    updateView(event.target.id);
+  };
+
   return (
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <Contact />
       <div class="container-fluid">
-        <button class="btn navbar-brand">Jacob Beckstrom</button>
+        <button class="btn navbar-brand" id="home" onClick={handleNavBarClick}>
+          Jacob Beckstrom
+        </button>
         <button
           class="navbar-toggler"
           type="button"
@@ -28,16 +34,24 @@ export default function NavBar() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav d-flex">
-            {/* <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">
+            <li class="nav-item">
+              <button
+                id="home"
+                class="nav-link active"
+                onClick={handleNavBarClick}
+              >
                 Home
-              </a>
-            </li> */}
-            {/* <li class="nav-item mr-auto">
-              <a class="nav-link" href="#projects">
+              </button>
+            </li>
+            <li class="nav-item mr-auto">
+              <button
+                id="projects"
+                class="nav-link"
+                onClick={handleNavBarClick}
+              >
                 Projects
-              </a>
-            </li> */}
+              </button>
+            </li>
           </ul>
           <ul class="navbar-nav d-flex justify-content-end w-100">
             <li class="nav-item p-2">
