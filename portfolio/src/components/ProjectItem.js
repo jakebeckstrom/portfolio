@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function ProjectItem({ project }) {
+    console.log("project: ", project)
   return (
     <div class="card">
       {/* <div class="card-header">{project.name}</div> */}
